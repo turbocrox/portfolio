@@ -1,5 +1,6 @@
 import React from 'react'
 import { words } from '../constants/index.js'
+import Button from '../components/Button.jsx'
 const Hero = () => {
   return (
     <section id="hero" className="relative  overflow-hidden">
@@ -31,10 +32,17 @@ const Hero = () => {
               </span>
                  </span>
                      </h1>
+        
           <h1>to life through clean and </h1>
             <h1>creative development.</h1>
 
-          </div>
+          </div> 
+          <br></br>
+           <p  className='text-gray-100 md:text-2xl relative z-10 pointer-events-none'>
+         Hi, I'm Aditya Pundir — a web developer based in India with a passion for building beautiful and functional web applications.
+
+        </p>
+        <Button />
         </header>
       </div>
     </section>
