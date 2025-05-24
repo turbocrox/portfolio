@@ -45,6 +45,7 @@ section {
 
   .padding-x-lg {
     @apply px-5 md:px-20;
+    scroll-margin-top: 5rem; /* offset for fixed navbar height */
   }
 
   .section-padding {

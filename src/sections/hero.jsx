@@ -1,7 +1,23 @@
 import React from 'react'
 import { words } from '../constants/index.js'
 import Button from '../components/Button.jsx'
+import HeroExperience from '../components/HeroModels/HeroExperience.jsx'
+import { useEffect } from 'react'
+import { gsap } from 'gsap/gsap-core'
+import AnimatedCounter from '../components/AnimatedCounter.jsx'
+
+
 const Hero = () => {
+  useEffect(() => {
+    gsap.fromTo(
+      '.hero-text h1',
+      { y: 50, opacity: 0 },
+      { y: 0, opacity: 1, duration: 1, stagger: 0.2, ease: 'power2.inOut' }
+    );
+  }, []);
+
+
+
   return (
     <section id="hero" className="relative  overflow-hidden">
       <div className="absolute   top-0  left-0 z-10">
@@ -39,12 +55,29 @@ const Hero = () => {
           </div> 
           <br></br>
            <p  className='text-gray-100 md:text-2xl relative z-10 pointer-events-none'>
-         Hi, I'm Aditya Pundir — a web developer based in India with a passion for building beautiful and functional web applications.
+         Hi, I'm Aditya Pundir — a web developer based in India.
 
         </p>
-        <Button />
-        </header>
+        <br></br>
+        <Button  className="md:w-80 md:h-16 w-60 h-12"
+        
+        id="button"
+        text="See my work"/>
+        </header> 
+
+        
+    <figure>
+        <div  className='hero-3d-layout '>
+          <HeroExperience></HeroExperience>
+
+        </div>
+    </figure>
+
+
       </div>
+
+      <AnimatedCounter></AnimatedCounter>
+
     </section>
   )
 }
