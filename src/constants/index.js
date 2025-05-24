@@ -1,11 +1,12 @@
 const navLinks = [
-  {
-    name: "Work",
-    link: "#work",
-  },
+
   {
     name: "Experience",
-    link: "#experience",
+    link: "#counter",
+  },
+   {
+    name: "Work",
+    link: "#work",
   },
   {
     name: "Skills",
@@ -16,6 +17,7 @@ const navLinks = [
     link: "#testimonials",
   },
 ];
+
 
 const words = [
   { text: "Ideas", imgPath: "/images/ideas.svg" },
@@ -29,10 +31,9 @@ const words = [
 ];
 
 const counterItems = [
-  { value: 15, suffix: "+", label: "Years of Experience" },
-  { value: 200, suffix: "+", label: "Satisfied Clients" },
-  { value: 108, suffix: "+", label: "Completed Projects" },
-  { value: 90, suffix: "%", label: "Client Retention Rate" },
+  { value: 1, suffix: "+", label: "Years of Experience" },
+  { value: 0, suffix: "+", label: "Satisfied Clients" },
+  { value: 5, suffix: "+", label: "Completed Projects" },
 ];
 
 const logoIconsList = [
@@ -75,17 +76,17 @@ const abilities = [
   {
     imgPath: "/images/seo.png",
     title: "Quality Focus",
-    desc: "Delivering high-quality results while maintaining attention to every detail.",
+    desc: "Driving outstanding outcomes by combining excellence with a sharp eye for detail.",
   },
   {
     imgPath: "/images/chat.png",
-    title: "Reliable Communication",
-    desc: "Keeping you updated at every step to ensure transparency and clarity.",
+  title: "Reliable Communication",
+desc: "Clear, consistent updates to keep you informed every step of the way.",
   },
   {
     imgPath: "/images/time.png",
     title: "On-Time Delivery",
-    desc: "Making sure projects are completed on schedule, with quality & attention to detail.",
+    desc: "Committed to on-time delivery, maintaining high standards of quality and meticulous attention to detail.",
   },
 ];
 
@@ -246,20 +247,15 @@ const testimonials = [
 
 const socialImgs = [
   {
-    name: "insta",
-    imgPath: "/images/insta.png",
+    name: "github",
+    imgPath: "/images/g1.png",
+    url: "https://github.com/turbocrox",
   },
-  {
-    name: "fb",
-    imgPath: "/images/fb.png",
-  },
-  {
-    name: "x",
-    imgPath: "/images/x.png",
-  },
+  
   {
     name: "linkedin",
     imgPath: "/images/linkedin.png",
+    url: "https://www.linkedin.com/in/aditya-pundir-0bb0462a7/",
   },
 ];
 
