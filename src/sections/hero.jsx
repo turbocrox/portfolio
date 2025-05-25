@@ -59,12 +59,10 @@ const Hero = () => {
 
         </p>
         <br></br>
-          <div className="p-4">
-          <Button  className="md:w-80 md:h-16 w-60 h-12"
-          
-          id="button"
-          text="See my work"/>
-        </div>
+        <Button  className="md:w-80 md:h-16 w-60 h-12 p-4"
+        
+        id="button"
+        text="See my work"/>
         </header> 
 
         
