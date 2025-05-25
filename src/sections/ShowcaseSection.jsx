@@ -56,7 +56,7 @@ const AppShowcase = () => {
                 Edemy  - A Learning Platform for Students and Instructors.
               </h2>
               <p className="text-white-50 md:text-xl">
-                An website  built with  MERN stack, featuring a user-friendly interface for students and instructors. It includes a course management system, interactive quizzes, and a discussion forum to enhance the learning experience.
+                An website  built with  MERN stack, featuring a user-friendly interface for students and instructors. It includes a course management system,and a discussion forum to enhance the learning experience.
               </p>
             </div>
           </div>
@@ -65,11 +65,11 @@ const AppShowcase = () => {
             <div className="project" ref={libraryRef}>
               <div className="image-wrapper bg-[#FFEFDB]">
                 <img
-                  src="/portfolio/images/project2.png"
+                  src="/portfolio/images/textto.jpg"
                   alt="Library Management Platform"
                 />
               </div>
-              <h2>Gesture-Controlled Cursor System</h2>
+              <h2>Text to Speech and Speech to Text</h2>
             </div>
 
             <div className="project" ref={ycDirectoryRef}>

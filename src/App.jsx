@@ -8,6 +8,7 @@ import NavBar from './components/NavBar.jsx';
 import FeatureCards from './sections/FeaturedCards.jsx';
 import  Contact from './sections/Contact.jsx';
 import Footer from './sections/Footer.jsx';
+import About from './sections/About.jsx'; // Changed to capital About
 function App() {
   return (<div>
 
@@ -15,6 +16,7 @@ function App() {
       <Hero />
       <ShowcaseSection/>
       <FeatureCards/>
+      <About/>
       <Contact/>
       <Footer/>
     
