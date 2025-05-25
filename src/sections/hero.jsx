@@ -55,13 +55,16 @@ const Hero = () => {
           </div> 
           <br></br>
            <p  className='text-gray-100 md:text-2xl relative z-10 pointer-events-none'>
-         Hi, I'm Aditya Pundir — a web developer based in India.</p>
+         Hi, I'm Aditya Pundir — a web developer based in India.
+
+        </p>
         <br></br>
-        <br></br>
-        <Button  className="md:w-80 md:h-16 w-60 h-12"
-        
-        id="button"
-        text="See my work"/>
+          <div className="p-4">
+          <Button  className="md:w-80 md:h-16 w-60 h-12"
+          
+          id="button"
+          text="See my work"/>
+        </div>
         </header> 
 
         
