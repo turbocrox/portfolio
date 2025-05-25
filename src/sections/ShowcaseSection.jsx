@@ -69,14 +69,14 @@ const AppShowcase = () => {
                   alt="Library Management Platform"
                 />
               </div>
-              <h2>Gesture-Controlled Cursor System </h2>
+              <h2>Gesture-Controlled Cursor System</h2>
             </div>
 
             <div className="project" ref={ycDirectoryRef}>
               <div className="image-wrapper bg-[#FFE7EB]">
-                <img src="/images/project3.png" alt="YC Directory App" />
+                <img src="/images/optiroute.png" alt="YC Directory App" />
               </div>
-              <h2>Speech and Text Interface: Real-Time TTS & STT </h2>
+              <h2>OptiRoute - Vehicle Routing and Visualization</h2>
             </div>
           </div>
         </div>
