@@ -22,7 +22,7 @@ const Hero = () => {
     <section id="hero" className="relative  overflow-hidden">
       <div className="absolute   top-0  left-0 z-10">
         <img  
-          src="/bg.png" 
+          src="/portfolio/bg.png" 
           alt="background"
           className="w-full h-full object-cover"
         />
@@ -55,9 +55,8 @@ const Hero = () => {
           </div> 
           <br></br>
            <p  className='text-gray-100 md:text-2xl relative z-10 pointer-events-none'>
-         Hi, I'm Aditya Pundir — a web developer based in India.
-
-        </p>
+         Hi, I'm Aditya Pundir — a web developer based in India.</p>
+        <br></br>
         <br></br>
         <Button  className="md:w-80 md:h-16 w-60 h-12"
         
