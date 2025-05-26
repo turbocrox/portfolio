@@ -54,7 +54,7 @@ const Hero = () => {
 
           </div> 
           <br></br>
-           <p  className='text-gray-100 md:text-2xl relative z-10 pointer-events-none'>
+           <p  className='text-gray-100 md:text-2xl relative z-10 pointer-events-none pb-10'>
          Hi, I'm Aditya Pundir — a web developer based in India.
 
         </p>
