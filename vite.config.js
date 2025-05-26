@@ -6,25 +6,4 @@ import tailwindcss from '@tailwindcss/vite'
 export default defineConfig({
   plugins: [react(), tailwindcss()],
   base: '/portfolio/',
-  build: {
-    chunkSizeWarningLimit: 600, // increase warning limit if needed
-    rollupOptions: {
-      output: {
-        manualChunks(id) {
-          if (id.includes('node_modules')) {
-            if (id.includes('react') || id.includes('react-dom')) {
-              return 'vendor_react'
-            }
-            if (id.includes('three')) {
-              return 'vendor_three'
-            }
-            if (id.includes('tailwindcss')) {
-              return 'vendor_tailwindcss'
-            }
-            return 'vendor'
-          }
-        }
-      }
-    }
-  }
 })
