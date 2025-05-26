@@ -1,8 +1,10 @@
-import { useRef, useState } from "react";
+import { useRef, useState, lazy, Suspense, useEffect } from "react";
 import emailjs from "@emailjs/browser";
 
 import TitleHeader from "../components/TitleHeader";
-import ContactExperience from "../components/ContactExperience";
+
+import ContactExperienceNormal from "../components/ContactExperience";
+const ContactExperienceLazy = lazy(() => import("../components/ContactExperience"));
 
 const Contact = () => {
   const formRef = useRef(null);
@@ -12,6 +14,17 @@ const Contact = () => {
     email: "",
     message: "",
   });
+
+  const [isMobile, setIsMobile] = useState(false);
+
+  useEffect(() => {
+    const checkMobile = () => {
+      setIsMobile(window.innerWidth <= 768);
+    };
+    checkMobile();
+    window.addEventListener("resize", checkMobile);
+    return () => window.removeEventListener("resize", checkMobile);
+  }, []);
 
   const handleChange = (e) => {
     const { name, value } = e.target;
@@ -109,7 +122,13 @@ const Contact = () => {
           </div>
           <div className="xl:col-span-7 min-h-96">
             <div className="bg-black-200 w-full h-full hover:cursor-grab rounded-3xl overflow-hidden">
-              <ContactExperience />
+              {isMobile ? (
+                <Suspense fallback={<div>Loading Contact Experience...</div>}>
+                  <ContactExperienceLazy />
+                </Suspense>
+              ) : (
+                <ContactExperienceNormal />
+              )}
             </div>
           </div>
         </div>
